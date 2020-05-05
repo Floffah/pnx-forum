@@ -1,0 +1,26 @@
+.btn {
+  padding: {
+    left: 12.5px;
+    right: 12.5px;
+    top: 5px;
+    bottom: 5px;
+  }
+  border-radius: 5px;
+  border: 1px $oc-gray-9 solid;
+  font-family: $font;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:active {
+    background-color: $oc-gray-4;
+  }
+
+  &.dark {
+    background-color: $oc-gray-9;
+    border: 1px $oc-gray-7 solid;
+    color: $oc-gray-0;
+    &:active {
+      background-color: $oc-gray-8;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 @import 'open-color';
 
+$font: 'Roboto', sans-serif;
+
 body, html {
   margin: 0;
   position: absolute;
@@ -7,13 +9,21 @@ body, html {
   width: 100%;
   left: 0;
   right: 0;
+  font-family: $font;
+}
+
+body {
   background-color: $oc-gray-0;
+  transition: background-color 0.25s;
   &.dark {
     background-color: $oc-gray-8;
   }
-  .switchtheme {
-    background-color: $oc-gray-8;
-    border: $oc-gray-9 1px solid;
-
-  }
 }
+
+.switchtheme {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+@import 'parts/button';

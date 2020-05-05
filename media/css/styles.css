@@ -5,14 +5,44 @@ body, html {
   width: 100%;
   left: 0;
   right: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
   background-color: #f8f9fa;
+  transition: background-color 0.25s;
 }
-body.dark, html.dark {
+body.dark {
   background-color: #343a40;
 }
-body .switchtheme, html .switchtheme {
+
+.switchtheme {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 1px #212529 solid;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.btn:active {
+  background-color: #ced4da;
+}
+.btn.dark {
+  background-color: #212529;
+  border: 1px #495057 solid;
+  color: #f8f9fa;
+}
+.btn.dark:active {
   background-color: #343a40;
-  border: #212529 1px solid;
 }
 
 /*# sourceMappingURL=styles.css.map */

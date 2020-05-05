@@ -1,0 +1,4 @@
+{
+  "ignore": ["node_modules", "media/css", "media/js", "media/sass"],
+  "ext": "js,mjs,json,mst"
+}
