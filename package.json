@@ -1,0 +1,38 @@
+{
+  "name": "pnx-forum",
+  "version": "1.0.0",
+  "description": "The forums and resource posting website for PocketNodeX",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "build": "npx concurrently npm:sass npm:js",
+    "sass": "npx sass --watch media/sass/styles.scss:media/css/styles.css",
+    "js": "npx babel media/js/raw/ -o media/js/pnxforum.js --watch --minified --compact true --source-root media/js/raw/index.js --source-maps true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floffah/pnx-forum.git"
+  },
+  "keywords": [],
+  "contributors": [
+    "DaRealPandaz",
+    "Floffah"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Floffah/pnx-forum/issues"
+  },
+  "homepage": "https://github.com/Floffah/pnx-forum#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "mustache": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "concurrently": "^5.2.0",
+    "sass": "^1.26.5"
+  }
+}

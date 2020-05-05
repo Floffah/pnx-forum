@@ -1,0 +1,19 @@
+@import 'open-color';
+
+body, html {
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: $oc-gray-0;
+  &.dark {
+    background-color: $oc-gray-8;
+  }
+  .switchtheme {
+    background-color: $oc-gray-8;
+    border: $oc-gray-9 1px solid;
+
+  }
+}
